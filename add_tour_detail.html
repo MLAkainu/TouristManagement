@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 1200px;min-width: 1200px;max-width: 1200px;">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>assignment</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+</head>
+
+<body style='width: 1200px;min-width: 1200px;max-width: 1200px;background: url("assets/img/add_tour_detail.png") top;'><a class="btn btn-primary" role="button" style='color: rgba(255,255,255,0);background: url("assets/img/return.png") center / contain no-repeat, rgba(255,255,255,0);border-width: 0px;width: 50px;min-width: 50px;max-width: 50px;height: 50px;min-height: 50px;max-height: 50px;margin-left: 25px;margin-top: 25px;' href="home.html" rel="prev">Button</a>
+    <h1 class="text-center" style="padding-bottom: 20px;margin-top: -20px;color: #94eaf4">ADD TOUR'S DETAIL SCHEDULE</h1>
+    <form method="post" action="controller/add_tour_detail.php" style="height: 180px;min-height: 180px;max-height: 180px;margin-top: -12px;margin-left: 15px">
+        <div class="d-xl-flex justify-content-xl-center">
+            <h2 style="margin-top: 20px;color: #94eaf4">Add a new defined action</h2>
+        </div>
+        <div class="d-inline-flex" style="margin-top: 10px;padding-left: 60px;"><label class="form-label" style="margin-left: 50px;font-size: 16px;padding-top: 8px;color: #94eaf4">Day </label><input id="Day_action" class="form-control d-xl-flex justify-content-xl-center" type="number" min="1" max="2" name="day_idx" step="1" style="font-size: 16px;width: 140px;" placeholder="order of day"><label class="form-label" style="margin-left: 50px;font-size: 16px;padding-top: 8px;color: #94eaf4">do </label><select class="form-select d-xl-flex justify-content-xl-center" style="font-size: 16px;line-height: 24px;width: 350px;" name="action">
+                <optgroup label="Actions">
+                    <option value="1" selected>Start the tour</option>
+                    <option value="2">End the tour</option>
+                    <option value="3">Have breakfast</option>
+                    <option value="4">Have lunch</option>
+                    <option value="5">Have dinner</option>
+                    <option value="6">Check in</option>
+                    <option value="7">Check out</option>
+                </optgroup>
+            </select><label class="form-label" style="margin-left: 50px;font-size: 16px;padding-top: 8px;color: #94eaf4">from </label><input class="form-control d-xl-flex justify-content-xl-center" type="text" min="1" max="2" name="start_hour" step="1" style="font-size: 16px;width: 100px;" placeholder="hh:mm"><label class="form-label" style="margin-left: 50px;font-size: 16px;padding-top: 8px;color: #94eaf4">to </label><input class="form-control d-xl-flex justify-content-xl-center" type="text" min="1" max="2" name="end_hour" step="1" style="font-size: 16px;width: 100px;" placeholder="hh:mm"></div>
+        <div class="d-inline-flex" style="margin-top: 20px;"><label class="form-label" style="margin-left: 50px;font-size: 16px;padding-top: 8px;padding-left: 60px;color: #94eaf4">Description: </label><input class="form-control" type="text" min="1" max="2" name="description" step="1" style="font-size: 16px;width: 650px;" placeholder="description"><button class="btn btn-primary" type="submit" name="add_action" style="margin-left: 50px;margin-top: -5px;color: #94eaf4">Add the action</button></div>
+    </form>
+    <form method="post" action="controller/add_tour_detail.php" style="height: 180px;min-height: 180px;max-height: 180px;margin-top: 55px; margin-left: 15px">
+        <div class="d-xl-flex justify-content-xl-center">
+            <h2 style="margin-top: 30px;color: #94eaf4">Add a new tourist attraction</h2>
+        </div>
+        <div class="d-inline-flex" style="margin-top: 10px;padding-left: 60px;"><label class="form-label" style="margin-left: 50px;font-size: 16px;padding-top: 8px;color: #94eaf4">Day </label><input id="Day_place" class="form-control d-xl-flex justify-content-xl-center" type="number" min="1" max="2" name="day_idx" step="1" style="font-size: 16px;width: 140px;" placeholder="order of day"><label class="form-label" style="margin-left: 50px;font-size: 16px;padding-top: 8px;color: #94eaf4">visit </label><select class="form-select d-xl-flex justify-content-xl-center" style="font-size: 16px;line-height: 24px;width: 343px;" name="place">
+                <optgroup id="Group" label="Places"><option value="1">Dinh Độc Lập</option><option value="2">Thác nước Datanla</option><option value="3">Chợ Đêm Đà Lạt</option><option value="4">Đảo Phú Quốc</option><option value="5">Tháp bà Ponagar</option><option value="6">Núi Cấm</option><option value="7">Hồ Ô Thum</option><option value="8">Rừng Tràm Trà Sư</option><option value="9">Đỉnh Lang Biang</option><option value="10">Thung Lũng Tình Yêu</option><option value="11">Thiền Viện Trúc Lâm</option><option value="12">Bảo Tàng Hải Dương Học</option><option value="13">Chùa Long Sơn</option><option value="14">Bán Đảo Sơn Trà</option><option value="15">Linh Ứng Tự</option><option value="16">Phố cổ Hội An</option><option value="17">Khu du lịch Bà Nà</option><option value="18">Chùa Thiên Mụ</option><option value="19">Kinh Thành Huế</option><option value="20">Động Thiên Đường</option><option value="21">Động Phong Nha</option><option value="22">Lăng Tự Đức</option><option value="23">Lăng Bác</option><option value="24">Chùa Một Cột</option><option value="25">Văn Miếu Quốc Tử Giám</option><option value="26">Bản Cát Cát</option><option value="27">Khu du lịch Tam Chúc</option><option value="28">Quần thể danh thắng Tràng An</option><option value="29">Vịnh Hạ Long</option></optgroup>
+            </select><label class="form-label" style="margin-left: 50px;font-size: 16px;padding-top: 8px;color: #94eaf4">from </label><input class="form-control d-xl-flex justify-content-xl-center" type="text" min="1" max="2" name="start_hour" step="1" style="font-size: 16px;width: 100px;" placeholder="hh:mm"><label class="form-label" style="margin-left: 50px;font-size: 16px;padding-top: 8px;color: #94eaf4">to </label><input class="form-control d-xl-flex justify-content-xl-center" type="text" min="1" max="2" name="end_hour" step="1" style="font-size: 16px;width: 100px;" placeholder="hh:mm"></div>
+        <div class="d-inline-flex" style="margin-top: 20px;"><label class="form-label" style="margin-left: 50px;font-size: 16px;padding-top: 8px;padding-left: 60px;color: #94eaf4">Description: </label><input class="form-control" type="text" min="1" max="2" name="description" step="1" style="font-size: 16px;width: 650px;" placeholder="description"><button class="btn btn-primary" type="submit" name="add_place" style="margin-left: 50px;margin-top: -5px;">Add the place</button></div>
+    </form>
+    <div class="d-flex d-xl-flex flex-column justify-content-xl-center align-items-xl-center">
+        <h2 style="margin-top: 75px;color: #94eaf4">Added actions and visitting places for the tour</h2>
+        <ul id="List"><li style="color: #94eaf4;">Day 1: Start the tour from 06:00:00 to 07:00:00</li><li style="color: #94eaf4;">Day 1: Visit at Dinh Độc Lập from 11:00:00 to 12:00:00 (Vũng Tàu)</li><li style="color: #94eaf4;">Day 2: End the tour from 18:00:00 to 19:00:00</li></ul>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+</body>
+
+</html>

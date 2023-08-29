@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 1200px;min-width: 1200px;max-width: 1200px;height: 700px;min-height: 700px;max-height: 700px;border-color: rgba(255,255,255,0);border-top-color: rgb(0,;border-right-color: 0,;border-bottom-color: 0);border-left-color: 0,;">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>assignment</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+    <style>
+        .alert {
+          padding: 20px;
+          margin-top: 8px;
+          background-color: #1cd57bb4;
+          color: white;
+        }
+        
+        .closebtn {
+          margin-left: 15px;
+          color: white;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        
+        .closebtn:hover {
+          color: black;
+        }
+        </style>
+</head>
+
+<body style='width: 1200px;min-width: 1200px;max-width: 1200px;height: 300px;min-height: 300px;max-height: 300px;background: url("assets/img/add_visit.png") center / cover no-repeat;padding-top: 0px;'>
+    <form style="min-height: 450px;margin-left: 25px;width: 1140px;min-width: 1140px;max-width: 1140px;height: 450px;max-height: 450px;background: #ffffff00;" action="controller/add_visit.php" method="post">
+        <input class="border-0 form-control form-control-lg" type="text" style="margin: 0;margin-top: 151px;width: 650px;margin-left: 320px;min-width: 650px;max-width: 650px;font-size: 26px;background: #ffffff00;color: #ffffff;--bs-body-color: var(--bs-white);font-family: serif;font-weight: bold;height: 57px;min-height: 57px;max-height: 57px;border-style: none;border-color: rgba(255,255,255,0);" name="destination" placeholder="... Destination ..." required>
+        <input class="border-0 form-control form-control-lg" type="text" style="margin: 0;margin-top: 22px;width: 360px;margin-left: 260px;min-width: 360px;max-width: 360px;font-size: 26px;background: #ffffff00;color: #ffffff;border-style: none;--bs-body-color: var(--bs-white);font-family: serif;height: 57px;min-height: 57px;max-height: 57px;filter: brightness(200%);" name="province" placeholder="... Province ..." required>
+        <input class="border-0 form-control form-control-lg" type="text" style="margin: 0;margin-top: 0px;width: 360px;margin-left: 260px;min-width: 360px;max-width: 360px;font-size: 26px;background: #ffffff00;color: #ffffff;border-style: none;--bs-body-color: var(--bs-white);font-family: serif;height: 57px;min-height: 57px;max-height: 57px;filter: brightness(200%);" name="district" placeholder="... District ..." required>
+        <input class="border-0 form-control form-control-lg" type="text" style="margin: 0;margin-top: 0px;width: 360px;margin-left: 260px;min-width: 360px;max-width: 360px;font-size: 26px;background: #ffffff00;color: #ffffff;border-style: none;--bs-body-color: var(--bs-white);font-family: serif;filter: brightness(200%);height: 57px;min-height: 57px;max-height: 57px;" name="ward" placeholder="... Ward ..." required>
+        <input class="border-0 form-control form-control-sm" type="file" name="file[]" accept="image/*" required style="font-size: 24px;margin-top: 20px;width: 399px;margin-left: 187px;line-height: 30px;height: 38px;min-height: 38px;max-height: 38px;" multiple>
+        <textarea class="border-0 form-control form-control-lg" placeholder="... Description ..." name="description" wrap="hard" style="width: 345px;margin-left: 650px;margin-top: -200px;min-width: 345px;max-width: 345px;height: 105px;min-height: 105px;max-height: 105px;background: rgba(255,255,255,0);font-size: 26px;line-height: 35px;color: rgb(255,255,255);filter: brightness(200%);border-color: rgba(255,255,255,0);" rows="10"></textarea>
+        <textarea class="border-0 form-control form-control-lg" placeholder="... Note ..." name="note" wrap="hard" style="width: 345px;margin-left: 650px;margin-top: 70px;min-width: 345px;max-width: 345px;height: 115px;min-height: 115px;max-height: 115px;background: rgba(255,255,255,0);font-size: 26px;line-height: 35px;color: rgb(255,255,255);filter: brightness(200%);border-color: rgba(255,255,255,0);" rows="10"></textarea>\
+        <button class="btn btn-primary btn-lg border-0" data-bss-hover-animate="bounce" type="submit" style="font-size: 26px;margin-top: -65px;margin-left: 215px;" name="submit_add_visit">Add new tourist attraction</button>
+    </form>
+    <a class="btn btn-primary" role="button" style='color: rgba(255,255,255,0);background: url("assets/img/return.png") center / contain no-repeat, rgba(255,255,255,0);border-width: 0px;width: 50px;min-width: 50px;max-width: 50px;height: 50px;min-height: 50px;max-height: 50px;margin-left: 25px;margin-top: -1120px;' href="home.html" rel="prev">Button</a>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <div id="popup" class="alert" style="visibility: hidden">Bạn đã thêm một địa điểm du lịch mới thành công<span class="closebtn" onclick="this.parentElement.style.display='none';">×</span></div>
+</body>
+
+</html>

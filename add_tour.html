@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 700px;min-height: 700px;max-height: 700px;width: 1200px;min-width: 1200px;max-width: 1200px;">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>assignment</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+    <style>
+        .alert {
+          padding: 20px;
+          margin-top: -60px;
+          background-color: #f44336;
+          color: white;
+        }
+        
+        .closebtn {
+          margin-left: 15px;
+          color: white;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        
+        .closebtn:hover {
+          color: black;
+        }
+    </style>
+</head>
+
+<body style='width: 1200px;min-width: 1200px;max-width: 1200px;height: 700px;min-height: 700px;max-height: 700px;background: url("assets/img/bg%20add%20tour%20+%20manage%20tour.png") center / cover no-repeat;'><a class="btn btn-primary" role="button" style='color: rgba(255,255,255,0);background: url("assets/img/return.png") center / contain no-repeat, rgba(255,255,255,0);border-width: 0px;width: 50px;min-width: 50px;max-width: 50px;height: 50px;min-height: 50px;max-height: 50px;margin-left: 25px;margin-top: 25px;' href="home.html" rel="prev">Button</a>
+    <h1 class="text-center" style="padding-bottom: 20px;margin-top: -10px; color:#94eaf4">ADD TOUR'S GENERAL INFORMATION</h1>
+    <form style="min-width: 1200px;width: 1200px;max-width: 1200px;margin-top: -10px;padding-right: 30px;padding-left: 80px;" action="controller/add_tour.php" method="post">
+        <div class="d-xl-flex align-items-center align-self-center align-items-xl-center"><label class="form-label d-xl-flex align-content-center align-self-end justify-content-xl-end align-items-xl-center" style="width: 550px;padding-right: 20px;color: #94eaf4;">TOUR NAME:</label><input class="form-control" type="text" placeholder="tour name" name="tour_name" style="margin-right: 50px;background: rgba(255,255,255,0.35);" required></div>
+        <div class="d-xl-flex align-items-center align-self-center align-items-xl-center"><label class="form-label d-xl-flex align-content-center align-self-end justify-content-xl-end align-items-xl-center" style="width: 550px;padding-right: 20px;color: #94eaf4;">PICTURE LINK:</label><input class="form-control" type="url" placeholder="picture url" name="picture_link" style="margin-right: 50px;background: rgba(255,255,255,0.35);" required></div>
+        <div class="d-xl-flex align-items-center align-self-center align-items-xl-center"><label class="form-label d-xl-flex align-content-center align-self-end justify-content-xl-end align-items-xl-center" style="width: 550px;padding-right: 20px;color: #94eaf4;">STARTING DAY:</label><input class="form-control" type="text" placeholder="starting day of the tour (YYYY-MM-DD)" name="start_day" style="margin-right: 50px;background: rgba(255,255,255,0.35);" required></div>
+        <div class="d-xl-flex align-items-center align-self-center align-items-xl-center"><label class="form-label d-xl-flex align-content-center align-self-end justify-content-xl-end align-items-xl-center" style="width: 550px;padding-right: 20px;color: #94eaf4;">MINIMUM NUMBER OF PASSENGERS:</label><input class="form-control" type="number" min="0" step="1" placeholder="minimum number of passenger that the tour needs (persons)" name="min_passenger" style="margin-right: 50px;background: rgba(255,255,255,0.35);" required></div>
+        <div class="d-xl-flex align-items-center align-self-center align-items-xl-center"><label class="form-label d-xl-flex align-content-center align-self-end justify-content-xl-end align-items-xl-center" style="width: 550px;padding-right: 20px;color: #94eaf4;">MAXIMUM NUMBER OF PASSENGERS:</label><input class="form-control" type="number" min="0" step="1" placeholder="maximum number of passengers that the tour can have (persons)" name="max_passenger" style="margin-right: 50px;background: rgba(255,255,255,0.35);" required></div>
+        <div class="d-xl-flex align-items-center align-self-center align-items-xl-center"><label class="form-label d-xl-flex align-content-center align-self-end justify-content-xl-end align-items-xl-center" style="width: 550px;padding-right: 20px;color: #94eaf4;">PRICE FOR ADULTS GOING ALONE:</label><input class="form-control" type="number" min="0" step="50000" placeholder="price for adults who don't register as in group (VNĐ)" name="adult_alone" style="margin-right: 50px;background: rgba(255,255,255,0.35);" required></div>
+        <div class="d-xl-flex align-items-center align-self-center align-items-xl-center"><label class="form-label d-xl-flex align-content-center align-self-end justify-content-xl-end align-items-xl-center" style="width: 550px;padding-right: 20px;color: #94eaf4;">PRICE FOR CHILDREN GOING ALONE:</label><input class="form-control" type="number" min="0" step="50000" placeholder="price for children who don't register as in group (VNĐ)" name="child_alone" style="margin-right: 50px;background: rgba(255,255,255,0.35);" required></div>
+        <div class="d-xl-flex align-items-center align-self-center align-items-xl-center"><label class="form-label d-xl-flex align-content-center align-self-end justify-content-xl-end align-items-xl-center" style="width: 550px;padding-right: 20px;color: #94eaf4;">PRICE FOR ADULT GOING IN GROUP:</label><input class="form-control" type="number" min="0" step="50000" placeholder="price for adults who register as in group (VNĐ)" name="adult_group" style="margin-right: 50px;background: rgba(255,255,255,0.35);" required></div>
+        <div class="d-xl-flex align-items-center align-self-center align-items-xl-center"><label class="form-label d-xl-flex align-content-center align-self-end justify-content-xl-end align-items-xl-center" style="width: 550px;padding-right: 20px;color: #94eaf4;">PRICE FOR CHILDREN GOING IN GROUP:</label><input class="form-control" type="number" min="0" step="50000" placeholder="price for children who register as in group (VNĐ)" name="child_group" style="margin-right: 50px;background: rgba(255,255,255,0.35);" required></div>
+        <div class="d-xl-flex align-items-center align-self-center align-items-xl-center"><label class="form-label d-xl-flex align-content-center align-self-end justify-content-xl-end align-items-xl-center" style="width: 550px;padding-right: 20px;color: #94eaf4;">MINIMUM NUMBER OF GROUP MEMBERS:</label><input class="form-control" type="number" min="0" step="1" placeholder="minimum number to establish a group of passengers for the tour (persons)" name="min_group" style="margin-right: 50px;background: rgba(255,255,255,0.35);" required></div>
+        <div class="d-xl-flex align-items-center align-self-center align-items-xl-center"><label class="form-label d-xl-flex align-content-center align-self-end justify-content-xl-end align-items-xl-center" style="width: 550px;padding-right: 20px;color: #94eaf4;">NUMBER OF DAYS:</label><input class="form-control" type="number" min="0" placeholder="the number of day that the tour has" name="num_day" style="margin-right: 50px;background: rgba(255,255,255,0.35);" required></div>
+        <div class="d-xl-flex align-items-center align-self-center align-items-xl-center"><label class="form-label d-xl-flex align-content-center align-self-end justify-content-xl-end align-items-xl-center" style="width: 550px;padding-right: 20px;color: #94eaf4;">NUMBER OF NIGHTS:</label><input class="form-control" type="number" min="0" placeholder="the number of night that the tour has" name="num_night" style="margin-right: 50px;background: rgba(255,255,255,0.35);" required></div>
+        <div class="d-xl-flex align-items-center align-self-center align-items-xl-center"><label class="form-label d-xl-flex align-content-center align-self-end justify-content-xl-end align-items-xl-center" style="width: 550px;padding-right: 20px;color: #94eaf4;">BRANCH INDEX:</label><input class="form-control" type="text" placeholder="the index of the company's branch hosting this tour" name="branch_idx" style="margin-right: 50px;background: rgba(255,255,255,0.35);" required></div>
+        <div class="d-xl-flex justify-content-xl-center" style="margin-top: 20px;"><button class="btn btn-primary d-xl-flex" type="submit" name="add_tour" style="margin-top: 10px;">Add detail schedule for the tour</button></div>
+    </form>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <div id="popup" class="alert" style="visibility: hidden">There is conflict in the given information, you should check the constraints in database before re-submit!<span class="closebtn" onclick="this.parentElement.style.display='none';">x</span></div>
+</body>
+
+</html>
